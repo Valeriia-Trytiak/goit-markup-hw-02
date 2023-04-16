@@ -37,6 +37,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   text-transform: none;
+  text-decoration: none;
   color: var(--color-slate);
 
   background-color: var(--background-color-white);
@@ -60,13 +61,19 @@ body {
   overflow: hidden;
 }
 
+.link {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-navy);
+}
+
 /**
   |============================
   | Логотип
   |============================
 */
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -74,19 +81,18 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-navy);
-  text-decoration: none;
-}
-.logo > span {
   color: var(--acent-color);
 }
-.page-footer .logo {
+.logo > span {
+  color: var(--color-navy);
+}
+.page-footer .accent-logo {
   color: var(--color-text-footer);
 }
 
 .logo:hover,
 .logo:focus {
-  color: var(--acent-color);
+  color: var(--acent-color-active);
 }
 
 /**
@@ -98,15 +104,10 @@ body {
   list-style: none;
 }
 
-.link {
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--color-navy);
-}
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active {
-  color: var(--acent-color);
+  color: var(--acent-color-active);
 }
 .site-nav .link.current {
   color: var(--acent-color);
@@ -119,7 +120,7 @@ body {
 .address .link:hover,
 .address .link:focus,
 .address .link:active {
-  color: var(--acent-color);
+  color: var(--acent-color-active);
 }
 
 /**
@@ -130,6 +131,7 @@ body {
 .section-title {
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
   color: var(--color-navy);
@@ -138,6 +140,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--color-navy);
 }
 
@@ -180,6 +183,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
   color: var(--color-text-white);
 }
