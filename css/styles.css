@@ -83,10 +83,10 @@ body {
   text-transform: uppercase;
   color: var(--acent-color);
 }
-.logo > span {
+.logo .upper-logo {
   color: var(--color-navy);
 }
-.page-footer .accent-logo {
+.page-footer .lower-logo {
   color: var(--color-text-footer);
 }
 
@@ -109,10 +109,11 @@ body {
 .site-nav .link:active {
   color: var(--acent-color-active);
 }
+/*
 .site-nav .link.current {
   color: var(--acent-color);
-}
-.address .link {
+} */
+.address {
   font-weight: inherit;
   font-style: normal;
   color: inherit;
@@ -211,7 +212,7 @@ body {
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: inherit;
+  color: var(--color-slate);
 }
 /**
     |============================
