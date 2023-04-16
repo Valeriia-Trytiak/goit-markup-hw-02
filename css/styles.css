@@ -31,17 +31,21 @@
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: none;
-  text-decoration: none;
   color: var(--color-slate);
 
   background-color: var(--background-color-white);
 }
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
 /**
   |============================
   | Скриті заголовки
@@ -61,12 +65,6 @@ body {
   overflow: hidden;
 }
 
-.link {
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--color-navy);
-}
-
 /**
   |============================
   | Логотип
@@ -77,8 +75,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--acent-color);
@@ -100,10 +96,10 @@ body {
   | Навігація
   |============================
 */
-.list {
-  list-style: none;
+.site-nav .link {
+  font-weight: 500;
+  color: var(--color-navy);
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active {
@@ -132,7 +128,6 @@ body {
 .section-title {
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
   color: var(--color-navy);
@@ -141,7 +136,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--color-navy);
 }
 
@@ -153,15 +147,10 @@ body {
 
 .btn {
   font-size: inherit;
-  font-style: normal;
   line-height: inherit;
   font-family: inherit;
   font-weight: 500;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
-  text-decoration: inherit;
-  text-transform: inherit;
   color: var(--color-text-white);
   background-color: var(--acent-color);
   cursor: pointer;
@@ -181,10 +170,8 @@ body {
   background-color: var(--background-color-dark);
 }
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   text-align: center;
   color: var(--color-text-white);
 }
@@ -206,14 +193,11 @@ body {
   | Галерея
   |============================
 */
+
 .gallery .text {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
   color: var(--color-slate);
 }
+
 /**
     |============================
     | Кнопки галереї робіт
@@ -222,8 +206,6 @@ body {
 .btn.gallery {
   color: var(--acent-color);
   background-color: var(--background-color-gris);
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
 }
 
 .btn.gallery:hover,
